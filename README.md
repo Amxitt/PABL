@@ -1,1 +1,1 @@
-This repository is a collection of my codes from college PABL course training sessions.
+This repository contains Python exercises and assignments completed as part of a college placement training (PABL).
