@@ -1,0 +1,23 @@
+
+def anonymous(arr, k):
+    n = len(arr)
+    arr.sort()
+    result = arr[-1] - arr[0]
+    small = arr[0] + k
+    big = arr[-1] - k
+    if small > big:
+        small , big = big, small
+    for i in range (n):
+        subtract = arr[i] - k
+        add = arr[i] + k
+
+        new_min = min(small, subtract)
+        new_max = max(big, add)
+        result = min(result , new_max - new_min)
+        return result
+
+arr = [1, 5, 8, 10]
+ans = anonymous(arr, 2)
+
+
+
